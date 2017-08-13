@@ -1,0 +1,242 @@
+@font-face {
+	font-family: 'Franklin Gothic Book';
+	src: url('../fonts/FranklinGothic-Book.eot');
+	src: url('../fonts/FranklinGothic-Book.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/FranklinGothic-Book.woff') format('woff'),
+		url('../fonts/FranklinGothic-Book.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'DecorCTT';
+	src: url('../fonts/DecorCTT.eot');
+	src: url('../fonts/DecorCTT.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/DecorCTT.woff') format('woff'),
+		url('../fonts/DecorCTT Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Comfortaa-Bold';
+	src: url('../fonts/Comfortaa-Bold.eot');
+	src: url('../fonts/Comfortaa-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Comfortaa-Bold.woff') format('woff'),
+		url('../fonts/Comfortaa-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Comfortaa-Regular';
+	src: url('../fonts/Comfortaa-Regular.eot');
+	src: url('../fonts/Comfortaa-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Comfortaa-Regular.woff') format('woff'),
+		url('../fonts/Comfortaa-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Comfortaa-Light';
+	src: url('../fonts/Comfortaa-Light.eot');
+	src: url('../fonts/Comfortaa-Light.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Comfortaa-Light.woff') format('woff'),
+		url('../fonts/Comfortaa-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Script MT';
+	src: url('../fonts/ScriptMTBold.eot');
+	src: url('../fonts/ScriptMTBold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ScriptMTBold.woff') format('woff'),
+		url('../fonts/ScriptMTBold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'DecorCyrillic';
+	src: url('../fonts/DecorCyrillic.eot');
+	src: url('../fonts/DecorCyrillic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/DecorCyrillic.woff') format('woff'),
+		url('../fonts/DecorCyrillic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+
+$fonts-Comfortaa-Bold: 'Comfortaa-Bold';
+$fonts-Comfortaa: 'Comfortaa-Regular';
+$fonts-Comfortaa-Light: 'Comfortaa-Light';
+$fonts-DecorCTT: 'DecorCTT';
+$fonts-Franklin: 'Franklin Gothic Book';
+$fonts-Script: 'Script MT';
+$fonts-Decor:  'DecorCyrillic';
+
+$color-white: #fff;
+$color-cherry: #85334a;
+$color-cherry-lite: #be939f;
+$color-brown: #665a56;
+$color-br-lite: #9a8881;
+$color-drown-lite: #b6aaa5;
+$color-gray: #666;
+$color-gray-lite: #979797;
+$color-gr-lite: #8c8c8c;
+
+/* -------------------------------------mixin------------------------ */
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+	@if $inset {
+	-webkit-box-shadow:inset $left $top $blur $color;
+	-moz-box-shadow:inset $left $top $blur $color;
+	box-shadow:inset $left $top $blur $color;
+	} @else {
+	-webkit-box-shadow: $left $top $blur $color;
+	-moz-box-shadow: $left $top $blur $color;
+	box-shadow: $left $top $blur $color;
+	}
+}
+/* -------------------------------------/mixin------------------------ */
+
+/* -------------------------------------button----------------------- */
+.btn{
+	margin-left: 60px;
+	padding: 16px 49px;
+	border: 1px solid $color-cherry;
+	background: transparent;
+	box-sizing: border-box;
+	outline: none;
+	font-family: $fonts-Comfortaa-Bold;
+	font-size: 18px;
+	color: $color-cherry;
+	left:20%;
+	cursor: pointer;
+	@include border-radius(6px);
+	&:hover{
+		 @include box-shadow(1px, 1px, 1px, 1px rgba(133,51,74,0.8),true);
+	}
+
+}
+.btn-goods{
+	padding: 7px 17px;	
+	border: 1px solid $color-br-lite;
+	background: transparent;
+	outline: none;
+	cursor: pointer;
+	@include border-radius(6px);
+	&:hover{
+		border: 1px solid $color-cherry;
+	}
+	&__a{
+		text-decoration: none;
+		font-size: 12px;
+		color: $color-br-lite;
+		&:hover{
+			color: $color-cherry;
+		}
+	}
+
+}
+/* -------------------------------------/button------------------------ */
+
+.open{
+	display: block!important;
+}
+
+.clearfix:after {
+	content: '';
+	display: table;
+	width: 100%;
+	clear: both;
+}
+.container{
+	max-width: 1170px;
+	margin: 0 auto;
+}
+.text{
+	text-align: center;
+	font-family: $fonts-Decor;
+	color: $color-cherry;
+	font-size: 72px;
+	padding-bottom: 76px;
+}
+/* -------------------------------------title h2-h3 ...------------------------ */
+.title{
+	position: relative;
+	display: inline-block;
+	font-family: $fonts-Comfortaa;
+	font-size: 24px;
+	color: $color-cherry;
+	margin-bottom: 58px;
+	&:after{
+		position: absolute;
+		content: '';
+		width: 30%;
+		height: 2px;
+		background: $color-cherry;
+		left: 35%;
+		bottom: -16px;
+
+	}
+}
+.title-h3{
+	font-family: $fonts-Comfortaa-Light;
+	font-size: 14px;
+	color:$color-drown-lite;
+	line-height: 63px;
+	vertical-align: middle;
+
+}
+.title-h4{
+	font-family: $fonts-Comfortaa-Bold;
+	font-size: 24px;
+	color: $color-cherry;
+	padding-bottom: 30px;
+	text-align: center;
+	line-height: 30px;
+}
+/* -------------------------------------/title h2-h3 ...------------------------ */
+.star{
+	color: $color-cherry-lite;
+	font-size: 12px;
+}
+.hamburger{
+	display: none;
+}
+.hamburger .line{
+  width: 50px;
+  height: 5px;
+  background-color: $color-cherry;
+  display: block;
+  margin: 8px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger:hover{
+  cursor: pointer;
+}
+#hamburger-1.is-active .line:nth-child(2){
+  opacity: 0;
+}
+
+#hamburger-1.is-active .line:nth-child(1){
+  -webkit-transform: translateY(13px) rotate(45deg);
+  -ms-transform: translateY(13px) rotate(45deg);
+  -o-transform: translateY(13px) rotate(45deg);
+  transform: translateY(13px) rotate(45deg);
+}
+
+#hamburger-1.is-active .line:nth-child(3){
+  -webkit-transform: translateY(-13px) rotate(-45deg);
+  -ms-transform: translateY(-13px) rotate(-45deg);
+  -o-transform: translateY(-13px) rotate(-45deg);
+  transform: translateY(-13px) rotate(-45deg);
+}

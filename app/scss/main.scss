@@ -1,0 +1,458 @@
+@import "_style";
+/* -----------------------------------header-------------------------- */
+
+
+header{
+	position: relative;
+	max-width: 1920px;
+}
+.menu{
+	position: absolute;
+	z-index: 9999;
+	width: 100%;
+	margin: 0 auto;
+	background: rgba(249,249,249, 0.3);
+	padding: 36px 0 25px 0;
+	&__logo{
+		display: flex;
+		float: left;
+		&-text{
+			font-family: $fonts-Script;
+			color: $color-cherry;
+			font-family: 20px;
+			&--word{
+				position: relative;
+				left: -30px;
+			}
+		}
+	}
+	&__main{
+
+	}
+	&__menu{
+		display: flex;
+		justify-content: space-around;
+		&-li{
+			&--a{
+				font-family: $fonts-Comfortaa-Bold;
+				font-size: 20px;
+				color: $color-brown;
+				text-decoration: none;
+				line-height: 58px;
+				vertical-align: middle;
+				&:hover{
+					color: $color-cherry;
+
+				}
+			}
+		}
+	}
+	&__info{
+		float: right;
+		color: $color-brown;
+		font-size: 16px;
+		text-align: right;
+		&--phone{
+			font-family: $fonts-Comfortaa-Bold;
+			line-height: 20px;
+		}
+		&--email{
+			font-family: $fonts-Comfortaa;
+			line-height: 32px;
+		}
+	}
+}
+.slider{
+	max-width: 1920px;
+	margin: 0 auto; 
+	position: relative;
+	&__sl{
+		width: 100%;
+		&-block{
+			position: relative;
+			&--img{
+			width: 100%;
+			display: block;
+			min-height: 943px;
+			}
+			&--info{
+				position: absolute;
+				top:30%;
+				left: 20%;
+			}
+		}	
+	}
+	&__controllers{
+	
+		&-prev{
+			position: absolute;
+			top: 40%;
+			left: 12%;
+			&--prev{				
+				font-size: 60px;
+				color: $color-white;
+				&:hover{
+					color: $color-cherry;
+				}
+			}	
+		}
+		&-next{
+			position: absolute;
+			top: 40%;
+			right: 12%;
+			&--next{
+				font-size: 60px;
+				color: $color-white;
+				&:hover{
+					color: $color-cherry;
+				}
+			}
+		}
+	}
+}
+/* ---------dots ------------*/
+.slick-dots{
+	position: absolute;
+	bottom: 20%;
+}
+.slick-dots li{}
+.slick-dots li button{
+	width: 17px;
+	height: 17px;
+	background: transparent;
+	border: 1px solid $color-cherry; 
+	border-radius: 50%;
+	color: transparent;
+	margin-right: 20px;
+}
+.slick-dots li button:before{
+	width: 17px;
+	height: 17px;
+	background: transparent;
+	border-radius: 50%;
+	color: transparent;
+}
+.slick-dots li.slick-active button{
+	width: 17px;
+	height: 17px;
+	background: $color-white;
+	border: none;
+	border-radius: 50%;
+}
+.slick-dots li.slick-active button:before{
+	width: 17px;
+	height: 17px;
+	background: $color-white;
+	border: none;
+	border-radius: 50%;
+	color: $color-white;
+}
+/* ---------/dots ------------*/
+
+/* -----------------------------------/header-------------------------- */
+
+/* -----------------------------------goods-------------------------- */
+.goods{
+	background:$color-white url('../img/bg-goods.png') left top no-repeat;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	&__info{
+		font-family: $fonts-Comfortaa;
+		font-size: 16px;
+		line-height: 25px;
+		color: $color-gray;
+		max-width: 800px;
+		margin: 0  auto 62px;
+
+	}
+	&-main{
+		flex-wrap: wrap;
+		flex-direction: row;
+		justify-content: space-between;
+		display: flex;
+		margin: auto;
+		padding: 0 136px;
+		&__page{
+			width: 252px;
+			height: 478px;
+			background: $color-white;
+			@include box-shadow( 1px, 1px, 3px,3px rgba(0,0,0,0.2));
+			margin-bottom: 74px;
+			&:hover{
+				@include box-shadow( 1px, 1px, 3px,3px rgba(133,51,74,0.5));
+				}
+			&--img{
+				width: 252px;
+				height: 363px;
+			}
+			
+			&-button{
+				display: flex;
+				justify-content: space-around;
+			}
+		}
+	}
+	&__btn{
+		margin-bottom: 176px;
+		&--a{
+			font-family: $fonts-Comfortaa-Bold;
+			color: $color-cherry;
+			font-size: 16px;
+			text-decoration: none;
+		}
+	}
+		
+}
+/* -----------------------------------/goods-------------------------- */
+
+
+/* -----------------------------------studio-------------------------- */
+.studio{
+	background:  $color-white url('../img/test-font.png')left top no-repeat; 
+	width: 100%;
+	background-size: cover;
+	&__main{
+		display: flex;
+	}
+	&__info{
+		max-width:40%;
+		text-align: center;
+		display: inline-block;
+	
+		&--p{
+			font-family: $fonts-Comfortaa-Light;
+			font-size: 12px;
+			line-height: 20px;
+			color: $color-gray-lite;
+			margin-bottom: 24px;
+			max-width: 473px;
+			text-align: left;
+			&-last{
+				padding-bottom: 35px;
+			}
+		}
+		
+		&--btn{
+			float: right;
+			margin-bottom: 372px;
+			z-index: 4;
+			&-a{
+				font-family: $fonts-Comfortaa-Bold;
+				font-size: 14px;
+				text-decoration: none;
+				color: $color-cherry;
+				z-index: 4;
+			}
+		}
+	}
+	&__photo{
+		width: 55%;
+		max-height: 503px;
+		position: relative;
+
+		&--mirror{
+			position: absolute;
+			width: 30%;
+			top: 25%;
+			left: 0;
+			z-index: 1;
+		}
+		&--haha{
+			position: absolute;
+			right: 0;
+			top:0;
+			z-index: 5;
+			width: 85%;
+		}
+		&--dres{
+			position: absolute;
+			left: 20%;
+			bottom: 3%;
+			z-index: 2;
+			width: 30%;
+		}
+		&--arm{
+			position: absolute;
+			width: 60%;
+			bottom: -2%;
+			right: -4%;
+			z-index: 3;
+		}
+	}
+
+}
+/* -----------------------------------/studio-------------------------- */
+
+/* -----------------------------------reviews-------------------------- */
+.reviews{
+		text-align: center;
+		position: relative;
+		width: 100%;
+		padding-bottom: 10px;
+		 &:after{
+			position: absolute;
+			content: '';
+			background-image: url('../img/fl-big-bg.png');
+			width:406px;
+			height: 350px;
+			right: 0;
+			bottom: 0;
+		} 
+		&__block{
+			position: relative;
+			top:-110px;
+		}
+		&--wrap{
+			display: flex;
+			justify-content: space-around;
+			flex-wrap: wrap;
+		}
+		&-main{
+			max-width: 459px;
+			padding: 23px 90px;
+			background:$color-white url('../img/fl-img.png') 0 100%  no-repeat;
+			box-sizing:border-box;
+			text-align: right;
+			margin-bottom: 80px;
+			z-index: 333;
+			@include box-shadow( 1px, 1px, 3px,3px rgba(196,196,196,0.2)); 
+			@include border-radius(5px);
+			&--p{
+				text-align: center;
+				font-family: $fonts-Comfortaa-Light;
+				font-size: 12px;
+				line-height: 20px;
+				color: $color-gr-lite;
+				max-width: 279px;
+				padding-bottom: 25px;
+				text-align: left;
+			}
+			&--span{
+				font-family: $fonts-Comfortaa-Bold;
+				font-size: 12px;
+				display: inline;
+				color: $color-gr-lite;
+				text-align: right;
+			}
+		}
+
+		&--a{
+			font-family: $fonts-Comfortaa-Bold;
+			font-size: 14px;
+			text-decoration: none;
+			color: $color-cherry;
+		}
+	}
+
+.swiper-container {
+        max-width: 1013px;
+        margin: 20px auto;
+        padding: 80px 0 0 0;
+}
+.swiper-pagination{
+	top: 0;
+	text-align: right;
+	margin-right: 20px;
+}
+.swiper-pagination-current, .swiper-pagination-total{
+	font-family: $fonts-Comfortaa-Bold;
+	font-size: 16px;
+	text-align: right;
+	color:$color-cherry;
+	position: relative;
+	padding: 10px;
+}
+.swiper-pagination-current:after{
+	content:'';
+	background: url(../img/left.png);
+	width: 10px;
+	height: 12px;
+	left:-12px;
+	position: absolute;
+}
+.swiper-pagination-total:after{
+	content:'';
+	background: url(../img/right.png);
+	width: 10px;
+	height: 12px;
+	right:-2px;
+	position: absolute;
+}
+/* -----------------------------------media-------------------------- */
+@media screen and (max-width:1162px){
+	.studio__photo{
+		max-height: 403px;
+	}
+}
+@media screen and (max-width:1024px){
+	.goods-main{
+		padding: 0;
+	}
+	.reviews:after{
+		z-index: -1;
+	}
+}
+@media screen and (max-width: 965px) {
+	.menu__logo{
+		margin-left: 10px;
+		float: none;
+	}
+	.menu__main{
+		display: none;
+	}
+	.hamburger{
+		display: inline-block;
+		margin: 10px;
+
+	}
+	.menu__menu{
+		display: inline-block;
+	}
+	.menu__menu-li--a{
+		line-height: 25px;
+		margin-left: 10px;
+		&:hover{
+			border-bottom: 1px solid $color-cherry;
+		}
+	}
+	.studio__photo {
+    max-height: 363px;
+	}
+}
+@media screen and (max-width:861px) {
+	.studio__photo {
+    max-height: 310px;
+	}
+}
+@media screen and (max-width:737px) {
+	.studio__photo {
+    max-height: 280px;
+	}
+}
+@media screen and (max-width:670px) {
+	.studio__photo {
+   		display: none;
+	}
+	.studio__info{
+		max-width: 100%;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 534px){
+	.btn{
+		padding: 10px;
+		margin-left: 0;
+		left: 10%;
+		right: 10%;
+	}
+	.goods-main{
+		justify-content: center;
+	}
+}
+
+
+

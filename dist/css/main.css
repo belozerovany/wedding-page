@@ -1,0 +1,585 @@
+@font-face {
+  font-family: 'Franklin Gothic Book';
+  src: url("../fonts/FranklinGothic-Book.eot");
+  src: url("../fonts/FranklinGothic-Book.eot?#iefix") format("embedded-opentype"), url("../fonts/FranklinGothic-Book.woff") format("woff"), url("../fonts/FranklinGothic-Book.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'DecorCTT';
+  src: url("../fonts/DecorCTT.eot");
+  src: url("../fonts/DecorCTT.eot?#iefix") format("embedded-opentype"), url("../fonts/DecorCTT.woff") format("woff"), url("../fonts/DecorCTT Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Comfortaa-Bold';
+  src: url("../fonts/Comfortaa-Bold.eot");
+  src: url("../fonts/Comfortaa-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Comfortaa-Bold.woff") format("woff"), url("../fonts/Comfortaa-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Comfortaa-Regular';
+  src: url("../fonts/Comfortaa-Regular.eot");
+  src: url("../fonts/Comfortaa-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Comfortaa-Regular.woff") format("woff"), url("../fonts/Comfortaa-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Comfortaa-Light';
+  src: url("../fonts/Comfortaa-Light.eot");
+  src: url("../fonts/Comfortaa-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Comfortaa-Light.woff") format("woff"), url("../fonts/Comfortaa-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Script MT';
+  src: url("../fonts/ScriptMTBold.eot");
+  src: url("../fonts/ScriptMTBold.eot?#iefix") format("embedded-opentype"), url("../fonts/ScriptMTBold.woff") format("woff"), url("../fonts/ScriptMTBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'DecorCyrillic';
+  src: url("../fonts/DecorCyrillic.eot");
+  src: url("../fonts/DecorCyrillic.eot?#iefix") format("embedded-opentype"), url("../fonts/DecorCyrillic.woff") format("woff"), url("../fonts/DecorCyrillic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic; }
+
+/* -------------------------------------mixin------------------------ */
+/* -------------------------------------/mixin------------------------ */
+/* -------------------------------------button----------------------- */
+.btn {
+  margin-left: 60px;
+  padding: 16px 49px;
+  border: 1px solid #85334a;
+  background: transparent;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  font-family: "Comfortaa-Bold";
+  font-size: 18px;
+  color: #85334a;
+  left: 20%;
+  cursor: pointer;
+  -webkit-border-radius: 6px;
+  border-radius: 6px; }
+  .btn:hover {
+    -webkit-box-shadow: inset 1px 1px 1px 1px rgba(133, 51, 74, 0.8);
+    box-shadow: inset 1px 1px 1px 1px rgba(133, 51, 74, 0.8); }
+
+.btn-goods {
+  padding: 7px 17px;
+  border: 1px solid #9a8881;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+  -webkit-border-radius: 6px;
+  border-radius: 6px; }
+  .btn-goods:hover {
+    border: 1px solid #85334a; }
+  .btn-goods__a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #9a8881; }
+    .btn-goods__a:hover {
+      color: #85334a; }
+
+/* -------------------------------------/button------------------------ */
+.open {
+  display: block !important; }
+
+.clearfix:after {
+  content: '';
+  display: table;
+  width: 100%;
+  clear: both; }
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto; }
+
+.text {
+  text-align: center;
+  font-family: "DecorCyrillic";
+  color: #85334a;
+  font-size: 72px;
+  padding-bottom: 76px; }
+
+/* -------------------------------------title h2-h3 ...------------------------ */
+.title {
+  position: relative;
+  display: inline-block;
+  font-family: "Comfortaa-Regular";
+  font-size: 24px;
+  color: #85334a;
+  margin-bottom: 58px; }
+  .title:after {
+    position: absolute;
+    content: '';
+    width: 30%;
+    height: 2px;
+    background: #85334a;
+    left: 35%;
+    bottom: -16px; }
+
+.title-h3 {
+  font-family: "Comfortaa-Light";
+  font-size: 14px;
+  color: #b6aaa5;
+  line-height: 63px;
+  vertical-align: middle; }
+
+.title-h4 {
+  font-family: "Comfortaa-Bold";
+  font-size: 24px;
+  color: #85334a;
+  padding-bottom: 30px;
+  text-align: center;
+  line-height: 30px; }
+
+/* -------------------------------------/title h2-h3 ...------------------------ */
+.star {
+  color: #be939f;
+  font-size: 12px; }
+
+.hamburger {
+  display: none; }
+
+.hamburger .line {
+  width: 50px;
+  height: 5px;
+  background-color: #85334a;
+  display: block;
+  margin: 8px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+
+.hamburger:hover {
+  cursor: pointer; }
+
+#hamburger-1.is-active .line:nth-child(2) {
+  opacity: 0; }
+
+#hamburger-1.is-active .line:nth-child(1) {
+  -webkit-transform: translateY(13px) rotate(45deg);
+  -ms-transform: translateY(13px) rotate(45deg);
+  transform: translateY(13px) rotate(45deg); }
+
+#hamburger-1.is-active .line:nth-child(3) {
+  -webkit-transform: translateY(-13px) rotate(-45deg);
+  -ms-transform: translateY(-13px) rotate(-45deg);
+  transform: translateY(-13px) rotate(-45deg); }
+
+/* -----------------------------------header-------------------------- */
+header {
+  position: relative;
+  max-width: 1920px; }
+
+.menu {
+  position: absolute;
+  z-index: 9999;
+  width: 100%;
+  margin: 0 auto;
+  background: rgba(249, 249, 249, 0.3);
+  padding: 36px 0 25px 0; }
+  .menu__logo {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    float: left; }
+    .menu__logo-text {
+      font-family: "Script MT";
+      color: #85334a;
+      font-family: 20px; }
+      .menu__logo-text--word {
+        position: relative;
+        left: -30px; }
+  .menu__menu {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around; }
+    .menu__menu-li--a {
+      font-family: "Comfortaa-Bold";
+      font-size: 20px;
+      color: #665a56;
+      text-decoration: none;
+      line-height: 58px;
+      vertical-align: middle; }
+      .menu__menu-li--a:hover {
+        color: #85334a; }
+  .menu__info {
+    float: right;
+    color: #665a56;
+    font-size: 16px;
+    text-align: right; }
+    .menu__info--phone {
+      font-family: "Comfortaa-Bold";
+      line-height: 20px; }
+    .menu__info--email {
+      font-family: "Comfortaa-Regular";
+      line-height: 32px; }
+
+.slider {
+  max-width: 1920px;
+  margin: 0 auto;
+  position: relative; }
+  .slider__sl {
+    width: 100%; }
+    .slider__sl-block {
+      position: relative; }
+      .slider__sl-block--img {
+        width: 100%;
+        display: block;
+        min-height: 943px; }
+      .slider__sl-block--info {
+        position: absolute;
+        top: 30%;
+        left: 20%; }
+  .slider__controllers-prev {
+    position: absolute;
+    top: 40%;
+    left: 12%; }
+    .slider__controllers-prev--prev {
+      font-size: 60px;
+      color: #fff; }
+      .slider__controllers-prev--prev:hover {
+        color: #85334a; }
+  .slider__controllers-next {
+    position: absolute;
+    top: 40%;
+    right: 12%; }
+    .slider__controllers-next--next {
+      font-size: 60px;
+      color: #fff; }
+      .slider__controllers-next--next:hover {
+        color: #85334a; }
+
+/* ---------dots ------------*/
+.slick-dots {
+  position: absolute;
+  bottom: 20%; }
+
+.slick-dots li button {
+  width: 17px;
+  height: 17px;
+  background: transparent;
+  border: 1px solid #85334a;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  color: transparent;
+  margin-right: 20px; }
+
+.slick-dots li button:before {
+  width: 17px;
+  height: 17px;
+  background: transparent;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  color: transparent; }
+
+.slick-dots li.slick-active button {
+  width: 17px;
+  height: 17px;
+  background: #fff;
+  border: none;
+  -webkit-border-radius: 50%;
+          border-radius: 50%; }
+
+.slick-dots li.slick-active button:before {
+  width: 17px;
+  height: 17px;
+  background: #fff;
+  border: none;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  color: #fff; }
+
+/* ---------/dots ------------*/
+/* -----------------------------------/header-------------------------- */
+/* -----------------------------------goods-------------------------- */
+.goods {
+  background: #fff url("../img/bg-goods.png") left top no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center; }
+  .goods__info {
+    font-family: "Comfortaa-Regular";
+    font-size: 16px;
+    line-height: 25px;
+    color: #666;
+    max-width: 800px;
+    margin: 0  auto 62px; }
+  .goods-main {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto;
+    padding: 0 136px; }
+    .goods-main__page {
+      width: 252px;
+      height: 478px;
+      background: #fff;
+      -webkit-box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.2);
+      box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.2);
+      margin-bottom: 74px; }
+      .goods-main__page:hover {
+        -webkit-box-shadow: 1px 1px 3px 3px rgba(133, 51, 74, 0.5);
+        box-shadow: 1px 1px 3px 3px rgba(133, 51, 74, 0.5); }
+      .goods-main__page--img {
+        width: 252px;
+        height: 363px; }
+      .goods-main__page-button {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-justify-content: space-around;
+            -ms-flex-pack: distribute;
+                justify-content: space-around; }
+  .goods__btn {
+    margin-bottom: 176px; }
+    .goods__btn--a {
+      font-family: "Comfortaa-Bold";
+      color: #85334a;
+      font-size: 16px;
+      text-decoration: none; }
+
+/* -----------------------------------/goods-------------------------- */
+/* -----------------------------------studio-------------------------- */
+.studio {
+  background: #fff url("../img/test-font.png") left top no-repeat;
+  width: 100%;
+  background-size: cover; }
+  .studio__main {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+  .studio__info {
+    max-width: 40%;
+    text-align: center;
+    display: inline-block; }
+    .studio__info--p {
+      font-family: "Comfortaa-Light";
+      font-size: 12px;
+      line-height: 20px;
+      color: #979797;
+      margin-bottom: 24px;
+      max-width: 473px;
+      text-align: left; }
+      .studio__info--p-last {
+        padding-bottom: 35px; }
+    .studio__info--btn {
+      float: right;
+      margin-bottom: 372px;
+      z-index: 4; }
+      .studio__info--btn-a {
+        font-family: "Comfortaa-Bold";
+        font-size: 14px;
+        text-decoration: none;
+        color: #85334a;
+        z-index: 4; }
+  .studio__photo {
+    width: 55%;
+    max-height: 503px;
+    position: relative; }
+    .studio__photo--mirror {
+      position: absolute;
+      width: 30%;
+      top: 25%;
+      left: 0;
+      z-index: 1; }
+    .studio__photo--haha {
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 5;
+      width: 85%; }
+    .studio__photo--dres {
+      position: absolute;
+      left: 20%;
+      bottom: 3%;
+      z-index: 2;
+      width: 30%; }
+    .studio__photo--arm {
+      position: absolute;
+      width: 60%;
+      bottom: -2%;
+      right: -4%;
+      z-index: 3; }
+
+/* -----------------------------------/studio-------------------------- */
+/* -----------------------------------reviews-------------------------- */
+.reviews {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  padding-bottom: 10px; }
+  .reviews:after {
+    position: absolute;
+    content: '';
+    background-image: url("../img/fl-big-bg.png");
+    width: 406px;
+    height: 350px;
+    right: 0;
+    bottom: 0; }
+  .reviews__block {
+    position: relative;
+    top: -110px; }
+  .reviews--wrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+  .reviews-main {
+    max-width: 459px;
+    padding: 23px 90px;
+    background: #fff url("../img/fl-img.png") 0 100% no-repeat;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    text-align: right;
+    margin-bottom: 80px;
+    z-index: 333;
+    -webkit-box-shadow: 1px 1px 3px 3px rgba(196, 196, 196, 0.2);
+    box-shadow: 1px 1px 3px 3px rgba(196, 196, 196, 0.2);
+    -webkit-border-radius: 5px;
+    border-radius: 5px; }
+    .reviews-main--p {
+      text-align: center;
+      font-family: "Comfortaa-Light";
+      font-size: 12px;
+      line-height: 20px;
+      color: #8c8c8c;
+      max-width: 279px;
+      padding-bottom: 25px;
+      text-align: left; }
+    .reviews-main--span {
+      font-family: "Comfortaa-Bold";
+      font-size: 12px;
+      display: inline;
+      color: #8c8c8c;
+      text-align: right; }
+  .reviews--a {
+    font-family: "Comfortaa-Bold";
+    font-size: 14px;
+    text-decoration: none;
+    color: #85334a; }
+
+.swiper-container {
+  max-width: 1013px;
+  margin: 20px auto;
+  padding: 80px 0 0 0; }
+
+.swiper-pagination {
+  top: 0;
+  text-align: right;
+  margin-right: 20px; }
+
+.swiper-pagination-current, .swiper-pagination-total {
+  font-family: "Comfortaa-Bold";
+  font-size: 16px;
+  text-align: right;
+  color: #85334a;
+  position: relative;
+  padding: 10px; }
+
+.swiper-pagination-current:after {
+  content: '';
+  background: url(../img/left.png);
+  width: 10px;
+  height: 12px;
+  left: -12px;
+  position: absolute; }
+
+.swiper-pagination-total:after {
+  content: '';
+  background: url(../img/right.png);
+  width: 10px;
+  height: 12px;
+  right: -2px;
+  position: absolute; }
+
+/* -----------------------------------media-------------------------- */
+@media screen and (max-width: 1162px) {
+  .studio__photo {
+    max-height: 403px; } }
+
+@media screen and (max-width: 1024px) {
+  .goods-main {
+    padding: 0; }
+  .reviews:after {
+    z-index: -1; } }
+
+@media screen and (max-width: 965px) {
+  .menu__logo {
+    margin-left: 10px;
+    float: none; }
+  .menu__main {
+    display: none; }
+  .hamburger {
+    display: inline-block;
+    margin: 10px; }
+  .menu__menu {
+    display: inline-block; }
+  .menu__menu-li--a {
+    line-height: 25px;
+    margin-left: 10px; }
+    .menu__menu-li--a:hover {
+      border-bottom: 1px solid #85334a; }
+  .studio__photo {
+    max-height: 363px; } }
+
+@media screen and (max-width: 861px) {
+  .studio__photo {
+    max-height: 310px; } }
+
+@media screen and (max-width: 737px) {
+  .studio__photo {
+    max-height: 280px; } }
+
+@media screen and (max-width: 670px) {
+  .studio__photo {
+    display: none; }
+  .studio__info {
+    max-width: 100%;
+    margin: 0 auto; } }
+
+@media screen and (max-width: 534px) {
+  .btn {
+    padding: 10px;
+    margin-left: 0;
+    left: 10%;
+    right: 10%; }
+  .goods-main {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; } }
